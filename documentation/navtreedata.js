@@ -24,20 +24,20 @@
 */
 var NAVTREE =
 [
-  [ "AcceleratedC++_4_7", "index.html", [
-    [ "C++ Boilerplate", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html", [
-      [ "<a href=\"https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master\" ><img src=\"https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master\" alt=\"Coverage Status\"/></a>", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md1", null ],
-      [ "Overview", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md2", null ],
-      [ "Standard install via command-line", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md3", null ],
-      [ "Building for code coverage (for assignments beginning in Week 4)", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md4", null ],
-      [ "Working with Eclipse IDE", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md5", null ],
-      [ "Installation", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md6", null ],
-      [ "Import", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md7", null ],
-      [ "Edit", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md8", [
-        [ "Build", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md9", null ],
-        [ "Run", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md10", null ],
-        [ "Debug", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md11", null ],
-        [ "Plugins", "dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html#autotoc_md12", null ]
+  [ "AcceleratedC++_6_9", "index.html", [
+    [ "C++ Boilerplate", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html", [
+      [ "<a href=\"https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master\" ><img src=\"https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master\" alt=\"Coverage Status\"/></a>", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md1", null ],
+      [ "Overview", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md2", null ],
+      [ "Standard install via command-line", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md3", null ],
+      [ "Building for code coverage (for assignments beginning in Week 4)", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md4", null ],
+      [ "Working with Eclipse IDE", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md5", null ],
+      [ "Installation", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md6", null ],
+      [ "Import", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md7", null ],
+      [ "Edit", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md8", [
+        [ "Build", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md9", null ],
+        [ "Run", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md10", null ],
+        [ "Debug", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md11", null ],
+        [ "Plugins", "df/d0b/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___6_9_cpp_boilerplate_readme.html#autotoc_md12", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [

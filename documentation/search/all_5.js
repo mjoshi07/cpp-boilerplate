@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getcompilationinfoforfile_0',['GetCompilationInfoForFile',['../d3/d37/_8ycm__extra__conf_8py.html#a42a14573593ce75cd6e385a85326111f',1,'.ycm_extra_conf.py']]]
+  ['isheaderfile_0',['IsHeaderFile',['../d3/d37/_8ycm__extra__conf_8py.html#a6bb59f541be0dcbde53eba606d48ddf8',1,'.ycm_extra_conf.py']]]
 ];

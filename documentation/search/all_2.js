@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['c_2b_2b_20boilerplate_0',['C++ Boilerplate',['../dc/d4e/md__e__study__fall_2021__e_n_p_m808_x__week3__a_s_s_i_g_n_m_e_n_t__accelerated_c___4_7_cpp_boilerplate_readme.html',1,'']]],
-  ['compilation_5fdatabase_5ffolder_1',['compilation_database_folder',['../d3/d37/_8ycm__extra__conf_8py.html#a6a4d7e96c7bc9093b406af626b7936a2',1,'.ycm_extra_conf.py']]]
+  ['database_0',['database',['../d3/d37/_8ycm__extra__conf_8py.html#a64dbaa3229ec575b68ec333442e10cee',1,'.ycm_extra_conf.py']]],
+  ['directoryofthisscript_1',['DirectoryOfThisScript',['../d3/d37/_8ycm__extra__conf_8py.html#aab283cdb607efa6a1a7aaa3f089c63f1',1,'.ycm_extra_conf.py']]],
+  ['dummy_2',['dummy',['../d2/d3f/lib_8hpp.html#a100d09f9a57d44745299c28c63c98745',1,'lib.hpp']]]
 ];
