@@ -12,14 +12,16 @@ Simple starter C++ project with:
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
-cd <path to repository>
+unzip the folder
+cd "folder name"
+copy vendor folder
 mkdir build
 cd build
 cmake ..
 make
 Run tests: ./test/cpp-test
-Run program: ./app/shell-app
+Run 1st program: ./app/shell-app
+Run 2nd program: ./app/count-words
 ```
 
 ## Building for code coverage (for assignments beginning in Week 4)
