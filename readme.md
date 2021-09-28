@@ -12,8 +12,9 @@ Simple starter C++ project with:
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
-cd <path to repository>
+unzip the folder
+cd "folder name"
+copy vendor folder
 mkdir build
 cd build
 cmake ..
