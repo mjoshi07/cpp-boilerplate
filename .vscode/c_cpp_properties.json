@@ -24,7 +24,9 @@
         {
             "name": "Linux",
             "includePath": [
-                "/usr/include"
+                "${workspaceRoot}/include",
+                "/usr/include",
+                "${workspaceFolder}/include"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
