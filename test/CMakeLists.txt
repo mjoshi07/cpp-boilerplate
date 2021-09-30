@@ -3,7 +3,7 @@ set(GTEST_SHUFFLE 1)
 add_executable(
     pid-controller-test
     main.cpp
-    PIDController_Test.cpp
+    test.cpp
     ../app/PIDController.cpp
 )
 
