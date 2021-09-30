@@ -1,5 +1,6 @@
 # VS Code files
 *.VC.db*
+.vscode
 
 # OS X files
 .DS_Store
@@ -9,3 +10,5 @@ build/
 
 # Python
 *.pyc
+
+
