@@ -3,7 +3,14 @@
 [![Coverage Status](https://coveralls.io/repos/github/mjoshi07/cpp-boilerplate/badge.svg?branch=TDD_Group5_master)](https://coveralls.io/github/mjoshi07/cpp-boilerplate?branch=TDD_Group5_master)
 ---
 
+## Part 1 Authors
+* Driver : Mayank Joshi
+* Navigator : Naitri Rajyaguru
+
+
 ## Overview
+* Test-Drive Development exercise
+* [PID controller](https://en.wikipedia.org/wiki/PID_controller) implementation for a new mobile robot product development
 
 Simple starter C++ project with:
 
@@ -12,8 +19,9 @@ Simple starter C++ project with:
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/mjoshi07/cpp-boilerplate
 cd <path to repository>
+git checkout Week5/TDD_Group5_master
 mkdir build
 cd build
 cmake ..
