@@ -1,6 +1,6 @@
 # VS Code files
 *.VC.db*
-.vscode
+.vscode/
 
 # OS X files
 .DS_Store
