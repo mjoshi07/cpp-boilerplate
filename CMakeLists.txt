@@ -10,8 +10,10 @@ option(COVERAGE "Generate Coverage Data" OFF)
 if (COVERAGE)
     include(CodeCoverage)
     set(LCOV_REMOVE_EXTRA "'vendor/*'")
-    setup_target_for_coverage(code_coverage test/cpp-test coverage)
-    set(COVERAGE_SRCS app/main.cpp include/lib.hpp)
+    setup_target_for_coverage(code_coverage test/pid-controller-test coverage)
+    set(COVERAGE_SRCS app/main.cpp app/PIDController.cpp include/PIDController.h)
+
+
 
     SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
