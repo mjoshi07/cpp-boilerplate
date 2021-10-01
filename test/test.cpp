@@ -22,9 +22,9 @@ PIDController pid_test_object;
  */
 
 TEST(PIDController, compute) {
-    Point target_set_point(10, 10);
+    double target_velocity = 2.5;
     double acutal_velocity = 5.0;
-    double new_velocity = pid_test_object.compute(target_set_point, acutal_velocity);
+    double new_velocity = pid_test_object.compute(target_velocity, acutal_velocity);
 
     EXPECT_DOUBLE_EQ(0.0, new_velocity);
 }
