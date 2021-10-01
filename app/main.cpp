@@ -13,6 +13,17 @@
 
 int main() {
     PIDController controller;
+    std::tuple<double, double, double> pidParams = controller.getParameters();
+
+    double kp = 0.02 + std::get<0>(pidParams);
+    double ki = 0.01 + std::get<1>(pidParams);
+    double kd = 0.003 + std::get<2>(pidParams);
+    controller.setParameters(kp, ki, kd);
+
+    double target_vel = 10.2;
+    double actual_vel = 12.5;
+    std::cout << controller.compute(target_vel, actual_vel) << std::endl;
+
     std::cout << "PID controller object created Successfully" << std::endl;
     return 0;
 }

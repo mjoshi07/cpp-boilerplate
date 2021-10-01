@@ -30,9 +30,14 @@ TEST(PIDController, compute) {
 }
 
 TEST(PIDController, getParameters) {
+    double kp = 1.0;
+    double ki = 1.0;
+    double kd = 1.0;
+    pid_object.setParameters(kp, ki, kd);
+
 std::tuple<double, double, double> pid_params = pid_object.getParameters();
 
-    ASSERT_EQ(std::get<0>(pid_params), 0.01);
-    ASSERT_EQ(std::get<1>(pid_params), 0.001);
-    ASSERT_EQ(std::get<2>(pid_params), 0.001);
+    ASSERT_EQ(std::get<0>(pid_params), 1.01);
+    ASSERT_EQ(std::get<1>(pid_params), 1.001);
+    ASSERT_EQ(std::get<2>(pid_params), 1.001);
 }

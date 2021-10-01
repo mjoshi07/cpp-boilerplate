@@ -26,6 +26,7 @@ PIDController::PIDController(double &kp1, double &ki1, double &kd1) {
 PIDController::~PIDController() {
 }
 double PIDController::compute(double& target_vel, double& actual_vel) {
+    new_velocity_ = target_vel*actual_vel*0;
     std::cout << "Returns the new computed velocity" << std::endl;
     return new_velocity_;
 }
