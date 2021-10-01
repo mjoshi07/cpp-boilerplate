@@ -17,7 +17,7 @@ PIDController::PIDController(): kp_(0.01), ki_(0.001), kd_(0.001), new_velocity_
 }
 PIDController::~PIDController() {
 }
-double PIDController::compute(const Point &target_set_point, const double& actual_velocity) {
+double PIDController::compute(const double& target_velocity, const double& actual_velocity) {
     std::cout << "Returns the new computed velocity" << std::endl;
     return new_velocity_;
 }

@@ -17,11 +17,6 @@
 #include <iostream>
 #include <tuple>
 
-struct Point {
-    Point(int x, int y):x_coordinate(x), y_coordinate(y) {}
-    int x_coordinate;
-    int y_coordinate;
-};
 
 class PIDController {
  public:
@@ -35,14 +30,14 @@ class PIDController {
     ~PIDController();
 
     /**
-     * @brief computes a new velocity using the target_set_point, current_velocity and PID gain parameters
+     * @brief computes a new velocity using the target_velocity, current_velocity and PID gain parameters
      * 
      * @param target_set_point 
      * @param current_velocity 
      * 
      * @return double new_valocity
      */
-    double compute(const Point &target_set_point, const double& actual_velocity);
+    double compute(const double &target_velocity, const double& actual_velocity);
     /**
      * @brief Get the PID gain parameters
      * 
