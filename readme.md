@@ -26,8 +26,8 @@ mkdir build
 cd build
 cmake ..
 make
-Run tests: ./test/cpp-test
-Run program: ./app/shell-app
+Run tests: ./test/pid-controller-test
+Run program: ./app/pid-controller
 ```
 
 ## Building for code coverage (for assignments beginning in Week 4)
