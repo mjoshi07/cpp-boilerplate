@@ -1,6 +1,6 @@
 # C++ Boilerplate
 [![Build Status](https://app.travis-ci.com/mjoshi07/cpp-boilerplate.svg?branch=Week5/TDD_Group5_master)](https://app.travis-ci.com/github/mjoshi07/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/mjoshi07/cpp-boilerplate/badge.svg?branch=TDD_Group5_master)](https://coveralls.io/github/mjoshi07/cpp-boilerplate?branch=TDD_Group5_master)
+[![Coverage Status](https://coveralls.io/repos/github/mjoshi07/cpp-boilerplate/badge.svg?branch=Week5/TDD_Group5_master)](https://coveralls.io/github/mjoshi07/cpp-boilerplate?branch=Week5/TDD_Group5_master)
 ---
 
 ## Part 1 Authors
