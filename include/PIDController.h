@@ -7,7 +7,7 @@
  * 
  * @copyright Copyright (c) 2021
  * 
- * ENPM808X Week  - Test Driven Development Exercise - Part 1
+ * ENPM808X Week 5 - Test Driven Development Exercise - Part 1
  * 
  */
 
@@ -32,7 +32,7 @@ class PIDController {
     /**
      * @brief computes a new velocity using the target_velocity, current_velocity and PID gain parameters
      * 
-     * @param target_set_point 
+     * @param target_velocity 
      * @param current_velocity 
      * 
      * @return double new_valocity
@@ -45,7 +45,7 @@ class PIDController {
      * 
      * @return std::tuple<double, double, double> (kp, ki, kd)
      */
-    std::tuple<double, double, double> getParameters();
+    std::tuple<double, double, double> getParameters() const;
     /**
      * @brief Set the PID gain parameters
      * 

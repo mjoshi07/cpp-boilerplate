@@ -7,7 +7,7 @@
  * 
  * @copyright Copyright (c) 2021
  * 
- * ENPM808X Week  - Test Driven Development Exercise - Part 1
+ * ENPM808X Week 5 - Test Driven Development Exercise - Part 1
  * 
  */
 
@@ -21,7 +21,7 @@ double PIDController::compute(const double& target_velocity, const double& actua
     std::cout << "Returns the new computed velocity" << std::endl;
     return new_velocity_;
 }
-std::tuple<double, double, double> PIDController::getParameters() {
+std::tuple<double, double, double> PIDController::getParameters() const {
         std::cout << "Returns PID gain parameters as a tuple (kp, ki, kd)" << std::endl;
     return std::tuple<double, double, double>(kp_, ki_, kd_);
 }

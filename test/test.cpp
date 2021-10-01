@@ -7,7 +7,7 @@
  * 
  * @copyright Copyright (c) 2021
  * 
- * ENPM808X Week  - Test Driven Development Exercise - Part 1
+ * ENPM808X Week 5 - Test Driven Development Exercise - Part 1
  * 
  */
 

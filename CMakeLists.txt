@@ -13,8 +13,6 @@ if (COVERAGE)
     setup_target_for_coverage(code_coverage test/pid-controller-test coverage)
     set(COVERAGE_SRCS app/main.cpp app/PIDController.cpp include/PIDController.h)
 
-
-
     SET(CMAKE_CXX_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     SET(CMAKE_C_FLAGS "-g -O0 -fprofile-arcs -ftest-coverage")
     SET(CMAKE_EXE_LINKER_FLAGS "-fprofile-arcs -ftest-coverage")
