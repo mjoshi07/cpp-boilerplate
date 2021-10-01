@@ -14,7 +14,7 @@
 #include <gtest/gtest.h>
 #include "PIDController.h"
 
-PIDController pid_test_object;
+PIDController pid_object;
 
 /**
  * @brief Tests the compute method with the given target setPoint, actual velocity and PID gain parameters
@@ -22,17 +22,17 @@ PIDController pid_test_object;
  */
 
 TEST(PIDController, compute) {
-    double target_velocity = 2.5;
-    double acutal_velocity = 5.0;
-    double new_velocity = pid_test_object.compute(target_velocity, acutal_velocity);
+    double target_vel = 2.5;
+    double acutal_vel = 5.0;
+    double new_velocity = pid_object.compute(target_vel, acutal_vel);
 
     EXPECT_DOUBLE_EQ(0.0, new_velocity);
 }
 
 TEST(PIDController, getParameters) {
-    std::tuple<double, double, double> pid_gain_params = pid_test_object.getParameters();
+std::tuple<double, double, double> pid_params = pid_object.getParameters();
 
-    ASSERT_EQ(std::get<0>(pid_gain_params), 0.01);
-    ASSERT_EQ(std::get<1>(pid_gain_params), 0.001);
-    ASSERT_EQ(std::get<2>(pid_gain_params), 0.001);
+    ASSERT_EQ(std::get<0>(pid_params), 0.01);
+    ASSERT_EQ(std::get<1>(pid_params), 0.001);
+    ASSERT_EQ(std::get<2>(pid_params), 0.001);
 }

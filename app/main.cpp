@@ -9,11 +9,10 @@
  * ENPM808X Week  - Test Driven Development Exercise - Part 1
  * 
  */
-// #include <PIDController.h>
 #include <PIDController.h>
 
 int main() {
     PIDController controller;
-    std::cout << "ALL GOOD" << std::endl;
+    std::cout << "PID controller object created Successfully" << std::endl;
     return 0;
 }

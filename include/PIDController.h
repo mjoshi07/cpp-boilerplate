@@ -27,6 +27,7 @@ class PIDController {
      * 
      */
     PIDController();
+    PIDController(double &kp1, double &ki1, double &kd1);
     ~PIDController();
 
     /**
@@ -37,7 +38,7 @@ class PIDController {
      * 
      * @return double new_valocity
      */
-    double compute(const double &target_velocity, const double& actual_velocity);
+    double compute(double &target_vel, double& actual_vel);
     /**
      * @brief Get the PID gain parameters
      * 
@@ -55,7 +56,7 @@ class PIDController {
      * 
      * @return Nothing
      */
-    void setParameters(const double &kp, const double &ki, const double &kd);
+    void setParameters(double &kp, double &ki, double &kd);
 
  private:
     /// Declaration of PID gain parameters

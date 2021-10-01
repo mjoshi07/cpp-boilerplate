@@ -13,19 +13,27 @@
 
 #include <PIDController.h>
 
-PIDController::PIDController(): kp_(0.01), ki_(0.001), kd_(0.001), new_velocity_(0.0) {
+PIDController::PIDController() {
+    kp_ = 0.01;
+    ki_ = 0.001;
+    kd_ = 0.001;
+    new_velocity_ = 0.0;
+}
+PIDController::PIDController(double &kp1, double &ki1, double &kd1) {
+    setParameters(kp1, ki1, kd1);
+    new_velocity_ = 0.0;
 }
 PIDController::~PIDController() {
 }
-double PIDController::compute(const double& target_velocity, const double& actual_velocity) {
+double PIDController::compute(double& target_vel, double& actual_vel) {
     std::cout << "Returns the new computed velocity" << std::endl;
     return new_velocity_;
 }
 std::tuple<double, double, double> PIDController::getParameters() const {
-        std::cout << "Returns PID gain parameters as a tuple (kp, ki, kd)" << std::endl;
+    std::cout << "Returns PID gain params (kp, ki, kd)" << std::endl;
     return std::tuple<double, double, double>(kp_, ki_, kd_);
 }
-void PIDController::setParameters(const double &kp, const double &ki, const double &kd) {
+void PIDController::setParameters(double &kp, double &ki, double &kd) {
         std::cout << "Sets the PID gain parameters" << std::endl;
     kp_ = kp;
     ki_ = ki;
