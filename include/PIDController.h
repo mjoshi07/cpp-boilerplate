@@ -21,7 +21,7 @@
 class PIDController {
  public:
     /**
-     * @brief Construct a new PIDController object with kp, ki, kd initialized with random values
+     * @brief Constructs a new PIDController object with randomly initialized kp, ki, kd, dt and error values
      * 
      * @param Nothing
      * 
@@ -31,12 +31,12 @@ class PIDController {
     ~PIDController();
 
     /**
-     * @brief computes a new velocity using the target_velocity, current_velocity and PID gain parameters
+     * @brief computes a new velocity using the target_velocity, current_velocity and PID parameters
      * 
      * @param target_velocity 
      * @param current_velocity 
      * 
-     * @return double new_valocity
+     * @return double new_velocity
      */
     double compute(double &target_vel, double& actual_vel);
     /**
@@ -46,9 +46,17 @@ class PIDController {
      * 
      * @return std::tuple<double, double, double> (kp, ki, kd)
      */
-    std::tuple<double, double, double> getParameters() const;
-    /**
-     * @brief Set the PID gain parameters
+    std::tuple<double, double, double> getGainParameters() const;
+     /**
+     * @brief Set the PID parameters to default values
+     * 
+     * @param Nothing
+     * 
+     * @return Nothing
+     */
+      void initializeParameters();
+     /**
+     * @brief Set the PID parameters
      * 
      * @param kp 
      * @param ki 
@@ -56,13 +64,21 @@ class PIDController {
      * 
      * @return Nothing
      */
-    void setParameters(double &kp, double &ki, double &kd);
+      void initializeParameters(double &kp, double &ki, double &kd);
+      /**
+       * @brief Get the calculated error
+       * 
+       * @return double error
+       */
+      double getError() const;
 
  private:
-    /// Declaration of PID gain parameters
+    /// member to store PID gain parameters
     double kp_, ki_, kd_;
-    /// Declaration of computed velocity
+    /// member to store computed velocity
     double new_velocity_;
+    /// member to store time step and error
+    double dt_, error_, prev_err_;
 };
 
 

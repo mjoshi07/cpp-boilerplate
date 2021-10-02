@@ -22,27 +22,23 @@ PIDController pid_object;
  */
 
 TEST(PIDController, compute) {
-    double target_vel = 2.5;
+    double target_vel = 10.0;
     double acutal_vel = 5.0;
+    double max_error = 0.1;
     double new_velocity = pid_object.compute(target_vel, acutal_vel);
 
-    EXPECT_DOUBLE_EQ(0.0, new_velocity);
+    EXPECT_NEAR(target_vel, new_velocity, max_error);
 }
 
-TEST(PIDController, getParameters) {
-    double kp = 1.0;
-    double ki = 1.0;
-    double kd = 1.0;
+TEST(PIDController, getGainParameters) {
+std::tuple<double, double, double> pid_params = pid_object.getGainParameters();
 
+    ASSERT_EQ(std::get<0>(pid_params), 0.9);
+    ASSERT_EQ(std::get<1>(pid_params), 0.1);
+    ASSERT_EQ(std::get<2>(pid_params), 0.01);
+}
 
-std::tuple<double, double, double> pid_params = pid_object.getParameters();
-
-    kp += std::get<0>(pid_params);
-    ki += std::get<1>(pid_params);
-    kd += std::get<2>(pid_params);
-    pid_object.setParameters(kp, ki, kd);
-
-    ASSERT_EQ(kp, 1.01);
-    ASSERT_EQ(ki, 1.001);
-    ASSERT_EQ(kd, 1.001);
+TEST(PIDController, getError) {
+    double error = pid_object.getError();
+    EXPECT_EQ(0.0, error);
 }

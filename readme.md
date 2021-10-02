@@ -30,7 +30,7 @@ Run tests: ./test/pid-controller-test
 Run program: ./app/pid-controller
 ```
 
-## Building for code coverage (for assignments beginning in Week 4)
+## Building for code coverage (for assignments beginning in Week 5)
 ```
 sudo apt-get install lcov
 cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../

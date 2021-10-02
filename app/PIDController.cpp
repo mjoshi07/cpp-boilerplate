@@ -14,30 +14,36 @@
 #include <PIDController.h>
 
 PIDController::PIDController() {
-    kp_ = 0.01;
-    ki_ = 0.001;
-    kd_ = 0.001;
-    new_velocity_ = 0.0;
+    initializeParameters();
 }
 PIDController::PIDController(double &kp1, double &ki1, double &kd1) {
-    setParameters(kp1, ki1, kd1);
-    new_velocity_ = 0.0;
+    initializeParameters(kp1, ki1, kd1);
 }
 PIDController::~PIDController() {
 }
-double PIDController::compute(double& target_vel, double& actual_vel) {
-    new_velocity_ = target_vel*actual_vel*0;
-    std::cout << "Returns the new computed velocity" << std::endl;
-    return new_velocity_;
+void PIDController::initializeParameters() {
+    double kp = 0.9;
+    double ki = 0.1;
+    double kd = 0.01;
+    initializeParameters(kp, ki, kd);
 }
-std::tuple<double, double, double> PIDController::getParameters() const {
-    std::cout << "Returns PID gain params (kp, ki, kd)" << std::endl;
-    return std::tuple<double, double, double>(kp_, ki_, kd_);
-}
-void PIDController::setParameters(double &kp, double &ki, double &kd) {
-        std::cout << "Sets the PID gain parameters" << std::endl;
+void PIDController::initializeParameters(double &kp, double &ki, double &kd) {
     kp_ = kp;
     ki_ = ki;
     kd_ = kd;
+    new_velocity_ = 0.0;
+    dt_ = 0.1;
+    prev_err_ = 0.0;
+    error_ = 0.0;
+}
+double PIDController::compute(double& target_vel, double& actual_vel) {
+    return new_velocity_;
+}
+std::tuple<double, double, double> PIDController::getGainParameters() const {
+    std::cout << "Returns PID gain params (kp, ki, kd)" << std::endl;
+    return std::tuple<double, double, double>(kp_, ki_, kd_);
+}
+double PIDController::getError() const  {
+    return error_;
 }
 
