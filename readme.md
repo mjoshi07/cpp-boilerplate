@@ -7,6 +7,21 @@
 * Driver : Mayank Joshi
 * Navigator : Naitri Rajyaguru
 
+## Part 2 Authors
+* Driver : Pratik Acharya
+* Navigator : Vivek Sood
+
+## Discussions (Part 2)
+* PID implementation was discussed
+* UML was studied
+* Activity diagram was requested
+* Discusses tests
+
+## To-Do (Part 2)
+* Add activity diagram
+* Complete implementation
+* Update readme
+* Include more tests
 
 ## Overview
 * Test-Drive Development exercise

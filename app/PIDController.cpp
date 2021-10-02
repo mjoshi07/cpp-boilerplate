@@ -37,6 +37,21 @@ void PIDController::initializeParameters(double &kp, double &ki, double &kd) {
     error_ = 0.0;
 }
 double PIDController::compute(double& target_vel, double& actual_vel) {
+    double error = target_vel - actual_vel;
+    new_velocity_ = actual_vel;
+    double Pout, integral(0.0), Iout, derivative, Dout, sum_error;
+    while(abs(error) > 0.01){
+        Pout = kp_* error;
+        integral += error*dt_;
+        Iout = ki_*integral;
+        derivative = (error - prev_err_)/dt_;
+        Dout = kd_ * derivative;
+        sum_error = Pout + Iout + Dout;
+        prev_err_ = error;
+        new_velocity_ = new_velocity_ + sum_error;
+        error = target_vel - new_velocity_;
+    }
+
     return new_velocity_;
 }
 std::tuple<double, double, double> PIDController::getGainParameters() const {
