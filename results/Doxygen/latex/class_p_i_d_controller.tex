@@ -1,0 +1,117 @@
+\hypertarget{class_p_i_d_controller}{}\doxysection{PIDController Class Reference}
+\label{class_p_i_d_controller}\index{PIDController@{PIDController}}
+
+
+{\ttfamily \#include $<$PIDController.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_p_i_d_controller_a67cc314aa5b3b4e9c47ac414b3a4c008}{PIDController}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{class_p_i_d_controller}{PIDController}} object with randomly initialized kp, ki, kd, dt and error values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_p_i_d_controller_ad057d3a0141f452bced934ad4c83fc90}{PIDController}} (double \&kp1, double \&ki1, double \&kd1)
+\item 
+\mbox{\hyperlink{class_p_i_d_controller_a690e7ad4796e5c5143aa4b90f2f6677b}{$\sim$\+PIDController}} ()
+\item 
+double \mbox{\hyperlink{class_p_i_d_controller_a688556133cc1976365275d3cba5e2199}{compute}} (double \&target\+\_\+vel, double \&actual\+\_\+vel)
+\begin{DoxyCompactList}\small\item\em computes a new velocity using the target\+\_\+velocity, current\+\_\+velocity and PID parameters \end{DoxyCompactList}\item 
+std\+::tuple$<$ double, double, double $>$ \mbox{\hyperlink{class_p_i_d_controller_aad7296ea487a4202d841af688b19126a}{get\+Gain\+Parameters}} () const
+\begin{DoxyCompactList}\small\item\em Get the PID gain parameters. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_p_i_d_controller_ad6f4775b0e9399b22bacfb8965258c5b}{get\+Error}} () const
+\begin{DoxyCompactList}\small\item\em Get the calculated error. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_p_i_d_controller_8h_source_l00020}{20}} of file \mbox{\hyperlink{_p_i_d_controller_8h_source}{PIDController.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_p_i_d_controller_a67cc314aa5b3b4e9c47ac414b3a4c008}\label{class_p_i_d_controller_a67cc314aa5b3b4e9c47ac414b3a4c008}} 
+\index{PIDController@{PIDController}!PIDController@{PIDController}}
+\index{PIDController@{PIDController}!PIDController@{PIDController}}
+\doxysubsubsection{\texorpdfstring{PIDController()}{PIDController()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily PIDController\+::\+PIDController (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \mbox{\hyperlink{class_p_i_d_controller}{PIDController}} object with randomly initialized kp, ki, kd, dt and error values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_p_i_d_controller_ad057d3a0141f452bced934ad4c83fc90}\label{class_p_i_d_controller_ad057d3a0141f452bced934ad4c83fc90}} 
+\index{PIDController@{PIDController}!PIDController@{PIDController}}
+\index{PIDController@{PIDController}!PIDController@{PIDController}}
+\doxysubsubsection{\texorpdfstring{PIDController()}{PIDController()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily PIDController\+::\+PIDController (\begin{DoxyParamCaption}\item[{double \&}]{kp1,  }\item[{double \&}]{ki1,  }\item[{double \&}]{kd1 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_p_i_d_controller_a690e7ad4796e5c5143aa4b90f2f6677b}\label{class_p_i_d_controller_a690e7ad4796e5c5143aa4b90f2f6677b}} 
+\index{PIDController@{PIDController}!````~PIDController@{$\sim$PIDController}}
+\index{````~PIDController@{$\sim$PIDController}!PIDController@{PIDController}}
+\doxysubsubsection{\texorpdfstring{$\sim$PIDController()}{~PIDController()}}
+{\footnotesize\ttfamily PIDController\+::$\sim$\+PIDController (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_p_i_d_controller_a688556133cc1976365275d3cba5e2199}\label{class_p_i_d_controller_a688556133cc1976365275d3cba5e2199}} 
+\index{PIDController@{PIDController}!compute@{compute}}
+\index{compute@{compute}!PIDController@{PIDController}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily double PIDController\+::compute (\begin{DoxyParamCaption}\item[{double \&}]{target\+\_\+vel,  }\item[{double \&}]{actual\+\_\+vel }\end{DoxyParamCaption})}
+
+
+
+computes a new velocity using the target\+\_\+velocity, current\+\_\+velocity and PID parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+\_\+velocity} & \\
+\hline
+{\em current\+\_\+velocity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double new\+\_\+velocity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_i_d_controller_ad6f4775b0e9399b22bacfb8965258c5b}\label{class_p_i_d_controller_ad6f4775b0e9399b22bacfb8965258c5b}} 
+\index{PIDController@{PIDController}!getError@{getError}}
+\index{getError@{getError}!PIDController@{PIDController}}
+\doxysubsubsection{\texorpdfstring{getError()}{getError()}}
+{\footnotesize\ttfamily double PIDController\+::get\+Error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the calculated error. 
+
+\begin{DoxyReturn}{Returns}
+double error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_p_i_d_controller_aad7296ea487a4202d841af688b19126a}\label{class_p_i_d_controller_aad7296ea487a4202d841af688b19126a}} 
+\index{PIDController@{PIDController}!getGainParameters@{getGainParameters}}
+\index{getGainParameters@{getGainParameters}!PIDController@{PIDController}}
+\doxysubsubsection{\texorpdfstring{getGainParameters()}{getGainParameters()}}
+{\footnotesize\ttfamily std\+::tuple$<$ double, double, double $>$ PIDController\+::get\+Gain\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the PID gain parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::tuple$<$double, double, double$>$ (kp, ki, kd) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_p_i_d_controller_8h}{PIDController.\+h}}\end{DoxyCompactItemize}

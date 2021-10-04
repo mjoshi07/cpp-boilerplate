@@ -1,0 +1,34 @@
+\hypertarget{_p_i_d_controller_8h_source}{}\doxysection{PIDController.\+h}
+\mbox{\hyperlink{_p_i_d_controller_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00014}00014 \textcolor{preprocessor}{\#ifndef INCLUDE\_PIDCONTROLLER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00015}00015 \textcolor{preprocessor}{\#define INCLUDE\_PIDCONTROLLER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00017}00017 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00018}00018 \textcolor{preprocessor}{\#include <tuple>}}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00020}\mbox{\hyperlink{class_p_i_d_controller}{00020}} \textcolor{keyword}{class }\mbox{\hyperlink{class_p_i_d_controller}{PIDController}} \{}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00021}00021  \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00028}\mbox{\hyperlink{class_p_i_d_controller_a67cc314aa5b3b4e9c47ac414b3a4c008}{00028}}   \mbox{\hyperlink{class_p_i_d_controller_a67cc314aa5b3b4e9c47ac414b3a4c008}{PIDController}}();}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00029}\mbox{\hyperlink{class_p_i_d_controller_ad057d3a0141f452bced934ad4c83fc90}{00029}}   \mbox{\hyperlink{class_p_i_d_controller_ad057d3a0141f452bced934ad4c83fc90}{PIDController}}(\textcolor{keywordtype}{double} \&kp1, \textcolor{keywordtype}{double} \&ki1, \textcolor{keywordtype}{double} \&kd1);}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00030}\mbox{\hyperlink{class_p_i_d_controller_a690e7ad4796e5c5143aa4b90f2f6677b}{00030}}   \mbox{\hyperlink{class_p_i_d_controller_a690e7ad4796e5c5143aa4b90f2f6677b}{\string~PIDController}}();}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00040}\mbox{\hyperlink{class_p_i_d_controller_a688556133cc1976365275d3cba5e2199}{00040}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_p_i_d_controller_a688556133cc1976365275d3cba5e2199}{compute}}(\textcolor{keywordtype}{double} \&target\_vel, \textcolor{keywordtype}{double} \&actual\_vel);}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00048}\mbox{\hyperlink{class_p_i_d_controller_aad7296ea487a4202d841af688b19126a}{00048}}   std::tuple<double, double, double> \mbox{\hyperlink{class_p_i_d_controller_aad7296ea487a4202d841af688b19126a}{getGainParameters}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00054}\mbox{\hyperlink{class_p_i_d_controller_ad6f4775b0e9399b22bacfb8965258c5b}{00054}}   \textcolor{keywordtype}{double} \mbox{\hyperlink{class_p_i_d_controller_ad6f4775b0e9399b22bacfb8965258c5b}{getError}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00056}00056  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00064}00064   \textcolor{keywordtype}{void} initializeParameters();}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00074}00074   \textcolor{keywordtype}{void} initializeParameters(\textcolor{keywordtype}{double} \&kp, \textcolor{keywordtype}{double} \&ki, \textcolor{keywordtype}{double} \&kd);}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00076}00076  \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00078}00078   \textcolor{keywordtype}{double} kp\_, ki\_, kd\_;}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00080}00080   \textcolor{keywordtype}{double} new\_velocity\_;}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00082}00082   \textcolor{keywordtype}{double} dt\_, error\_, prev\_err\_;}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00083}00083 \};}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00085}00085 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{// INCLUDE\_PIDCONTROLLER\_H\_}}
+\DoxyCodeLine{\Hypertarget{_p_i_d_controller_8h_source_l00086}00086 }
+
+\end{DoxyCode}
