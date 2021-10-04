@@ -15,20 +15,43 @@
 
 #include <PIDController.h>
 
+/**
+* @brief Constructor
+*/
+
 PIDController::PIDController() {
     initializeParameters();
 }
 PIDController::PIDController(double &kp1, double &ki1, double &kd1) {
     initializeParameters(kp1, ki1, kd1);
 }
+
+
+/**
+* @brief Destructor
+*
+*/
 PIDController::~PIDController() {
 }
+
+/**
+* @brief Method to initialize the parameters
+* @return None
+*/
 void PIDController::initializeParameters() {
     double kp = 0.9;
     double ki = 0.1;
     double kd = 0.01;
     initializeParameters(kp, ki, kd);
 }
+
+/**
+* @brief Method to initialize the parameters
+* @param[in] kp proportional gain
+* @param[in] ki integral gain
+* @param[in] kd differential gain
+* @return None
+*/
 void PIDController::initializeParameters(double &kp, double &ki, double &kd) {
     kp_ = kp;
     ki_ = ki;
