@@ -1,0 +1,122 @@
+\href{https://app.travis-ci.com/github/mjoshi07/cpp-boilerplate}{\texttt{ }} \hypertarget{md_readme_autotoc_md1}{}\doxysection{$<$a href=\char`\"{}https\+://coveralls.\+io/github/mjoshi07/cpp-\/boilerplate?branch=\+Week5/\+TDD\+\_\+\+Group5\+\_\+master\char`\"{} $>$$<$img src=\char`\"{}https\+://coveralls.\+io/repos/github/mjoshi07/cpp-\/boilerplate/badge.\+svg?branch=\+Week5/\+TDD\+\_\+\+Group5\+\_\+master\char`\"{} alt=\char`\"{}\+Coverage Status\char`\"{}/$>$$<$/a$>$}\label{md_readme_autotoc_md1}
+\hypertarget{md_readme_autotoc_md2}{}\doxysection{Part 1 Authors}\label{md_readme_autotoc_md2}
+
+\begin{DoxyItemize}
+\item Driver \+: Mayank Joshi
+\item Navigator \+: Naitri Rajyaguru
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md3}{}\doxysection{Part 2 Authors}\label{md_readme_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Driver \+: Pratik Acharya
+\item Navigator \+: Vivek Sood
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md4}{}\doxysection{Discussions (\+Part 2)}\label{md_readme_autotoc_md4}
+
+\begin{DoxyItemize}
+\item PID implementation was discussed
+\item UML was studied
+\item Activity diagram was requested
+\item Discusses tests
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md5}{}\doxysection{To-\/\+Do (\+Part 2)}\label{md_readme_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Add activity diagram
+\item Complete implementation
+\item Update readme
+\item Include more tests
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md6}{}\doxysection{Overview}\label{md_readme_autotoc_md6}
+
+\begin{DoxyItemize}
+\item Test-\/\+Drive Development exercise
+\item \href{https://en.wikipedia.org/wiki/PID_controller}{\texttt{ PID controller}} implementation for a new mobile robot product development
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md7}{}\doxysection{UML}\label{md_readme_autotoc_md7}
+
+
+Simple starter C++ project with\+:
+
+
+\begin{DoxyItemize}
+\item cmake
+\item googletest
+\end{DoxyItemize}\hypertarget{md_readme_autotoc_md8}{}\doxysection{Standard install via command-\/line}\label{md_readme_autotoc_md8}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{git clone -\/-\/recursive https://github.com/mjoshi07/cpp-\/boilerplate}
+\DoxyCodeLine{cd <path to repository>}
+\DoxyCodeLine{git checkout Week5/TDD\_Group5\_master}
+\DoxyCodeLine{mkdir build}
+\DoxyCodeLine{cd build}
+\DoxyCodeLine{cmake ..}
+\DoxyCodeLine{make}
+\DoxyCodeLine{Run tests: ./test/pid-\/controller-\/test}
+\DoxyCodeLine{Run program: ./app/pid-\/controller}
+
+\end{DoxyCode}
+\hypertarget{md_readme_autotoc_md9}{}\doxysection{Building for code coverage (for assignments beginning in Week 5)}\label{md_readme_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt-\/get install lcov}
+\DoxyCodeLine{cmake -\/D COVERAGE=ON -\/D CMAKE\_BUILD\_TYPE=Debug ../}
+\DoxyCodeLine{make}
+\DoxyCodeLine{make code\_coverage}
+
+\end{DoxyCode}
+ This generates a index.\+html page in the build/coverage sub-\/directory that can be viewed locally in a web browser.\hypertarget{md_readme_autotoc_md10}{}\doxysection{Working with Eclipse IDE}\label{md_readme_autotoc_md10}
+\hypertarget{md_readme_autotoc_md11}{}\doxysection{Installation}\label{md_readme_autotoc_md11}
+In your Eclipse workspace directory (or create a new one), checkout the repo (and submodules) 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{mkdir -\/p \string~/workspace}
+\DoxyCodeLine{cd \string~/workspace}
+\DoxyCodeLine{git clone -\/b Week5/TDD\_Group5\_master -\/-\/recursive https://github.com/mjoshi07/cpp-\/boilerplate}
+
+\end{DoxyCode}
+
+
+In your work directory, use cmake to create an Eclipse project for an \mbox{[}out-\/of-\/source build\mbox{]} of cpp-\/boilerplate
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd \string~/workspace}
+\DoxyCodeLine{mkdir -\/p boilerplate-\/eclipse}
+\DoxyCodeLine{cd boilerplate-\/eclipse}
+\DoxyCodeLine{cmake -\/G "{}Eclipse CDT4 -\/ Unix Makefiles"{} -\/D CMAKE\_BUILD\_TYPE=Debug -\/D CMAKE\_ECLIPSE\_VERSION=4.7.0 -\/D CMAKE\_CXX\_COMPILER\_ARG1=-\/std=c++14 ../cpp-\/boilerplate/}
+
+\end{DoxyCode}
+\hypertarget{md_readme_autotoc_md12}{}\doxysection{Import}\label{md_readme_autotoc_md12}
+Open Eclipse, go to File -\/\texorpdfstring{$>$}{>} Import -\/\texorpdfstring{$>$}{>} General -\/\texorpdfstring{$>$}{>} Existing Projects into Workspace -\/\texorpdfstring{$>$}{>} Select \char`\"{}boilerplate-\/eclipse\char`\"{} directory created previously as root directory -\/\texorpdfstring{$>$}{>} Finish\hypertarget{md_readme_autotoc_md13}{}\doxysection{Edit}\label{md_readme_autotoc_md13}
+Source files may be edited under the \char`\"{}\mbox{[}\+Source Directory\mbox{]}\char`\"{} label in the Project Explorer.\hypertarget{md_readme_autotoc_md14}{}\doxysubsection{Build}\label{md_readme_autotoc_md14}
+To build the project, in Eclipse, unfold boilerplate-\/eclipse project in Project Explorer, unfold Build Targets, double click on \char`\"{}all\char`\"{} to build all projects.\hypertarget{md_readme_autotoc_md15}{}\doxysubsection{Run}\label{md_readme_autotoc_md15}
+
+\begin{DoxyEnumerate}
+\item In Eclipse, right click on the boilerplate-\/eclipse in Project Explorer, select Run As -\/\texorpdfstring{$>$}{>} Local C/\+C++ Application
+\item Choose the binaries to run (e.\+g. shell-\/app, cpp-\/test for unit testing)
+\end{DoxyEnumerate}\hypertarget{md_readme_autotoc_md16}{}\doxysubsection{Debug}\label{md_readme_autotoc_md16}
+
+\begin{DoxyEnumerate}
+\item Set breakpoint in source file (i.\+e. double click in the left margin on the line you want the program to break).
+\item In Eclipse, right click on the boilerplate-\/eclipse in Project Explorer, select Debug As -\/\texorpdfstring{$>$}{>} Local C/\+C++ Application, choose the binaries to run (e.\+g. shell-\/app).
+\item If prompt to \char`\"{}\+Confirm Perspective Switch\char`\"{}, select yes.
+\item Program will break at the breakpoint you set.
+\item Press Step Into (F5), Step Over (F6), Step Return (F7) to step/debug your program.
+\item Right click on the variable in editor to add watch expression to watch the variable in debugger window.
+\item Press Terminate icon to terminate debugging and press C/\+C++ icon to switch back to C/\+C++ perspetive view (or Windows-\/\texorpdfstring{$>$}{>}Perspective-\/\texorpdfstring{$>$}{>}Open Perspective-\/\texorpdfstring{$>$}{>}C/\+C++).
+\end{DoxyEnumerate}\hypertarget{md_readme_autotoc_md17}{}\doxysubsection{Plugins}\label{md_readme_autotoc_md17}
+
+\begin{DoxyItemize}
+\item Cpp\+Ch\+Eclipse
+
+To install and run cppcheck in Eclipse
+\begin{DoxyEnumerate}
+\item In Eclipse, go to Window -\/\texorpdfstring{$>$}{>} Preferences -\/\texorpdfstring{$>$}{>} C/\+C++ -\/\texorpdfstring{$>$}{>} cppcheclipse. Set cppcheck binary path to \char`\"{}/usr/bin/cppcheck\char`\"{}.
+\item To run CPPCheck on a project, right click on the project name in the Project Explorer and choose cppcheck -\/\texorpdfstring{$>$}{>} Run cppcheck.
+\end{DoxyEnumerate}
+\item Google C++ Sytle
+
+To include and use Google C++ Style formatter in Eclipse
+\begin{DoxyEnumerate}
+\item In Eclipse, go to Window -\/\texorpdfstring{$>$}{>} Preferences -\/\texorpdfstring{$>$}{>} C/\+C++ -\/\texorpdfstring{$>$}{>} Code Style -\/\texorpdfstring{$>$}{>} Formatter. Import \href{https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-cpp-google-style.xml}{\texttt{ eclipse-\/cpp-\/google-\/style}} and apply.
+\item To use Google C++ style formatter, right click on the source code or folder in Project Explorer and choose Source -\/\texorpdfstring{$>$}{>} Format
+\end{DoxyEnumerate}
+\item Git
+
+It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you\textquotesingle{}re interested in this, try it out yourself and contact me on Canvas. 
+\end{DoxyItemize}
