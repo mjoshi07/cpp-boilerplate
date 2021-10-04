@@ -17,12 +17,6 @@
 * Activity diagram was requested
 * Discusses tests
 
-## To-Do (Part 2)
-* Add activity diagram
-* Complete implementation
-* Update readme
-* Include more tests
-
 ## Overview
 * Test-Drive Development exercise
 * [PID controller](https://en.wikipedia.org/wiki/PID_controller) implementation for a new mobile robot product development
