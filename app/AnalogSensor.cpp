@@ -1,23 +1,27 @@
+/**
+ * @file AnalogSensor.cpp
+ * @author mayank joshi
+ * @brief 
+ * @version 0.1
+ * @date 2021-11-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <AnalogSensor.hpp>
 #include <numeric>
 #include <vector>
 
-AnalogSensor::AnalogSensor(unsigned int samples)
-    : mSamples(samples)
-{
+int AnalogSensor::Read(int num_samples) {
+    if (num_samples <= 0) {
+        return -1;
+    }
+    int sensor_value(1);
+    for (int i = 1; i < num_samples; i++) {
+       sensor_value +=  sensor_.sensor_val();
+    }
+
+    return sensor_value;
 }
-
-AnalogSensor::~AnalogSensor()
-{
-}
-
-int AnalogSensor::Read()
-{
-    std::vector<int> *readings = new std::vector<int>(mSamples, 10);
-
-    double result = std::accumulate( readings->begin(), readings->end(), 0.0 ) / readings->size();
-    delete readings;
-    return result;
-}
-
 
