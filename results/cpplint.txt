@@ -1,0 +1,6 @@
+cpplint $( find . -name *.cpp -or -name *.hpp | grep -vE -e "^./test/" -e "^./build/" -e "^./vendor/" )
+Done processing ./app/AnalogSensor.cpp
+Done processing ./app/main.cpp
+Done processing ./include/AnalogSensor.hpp
+Done processing ./include/MockSensor.hpp
+Done processing ./include/Sensor.hpp
