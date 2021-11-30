@@ -14,7 +14,9 @@ TEST(MockSensorTest, Read_success) {
     MockSensor ms;
     AnalogSensor ans(ms);
     
-    EXPECT_CALL(ms, sensor_val()).Times(1).WillOnce(Return(1));
+    EXPECT_CALL(ms, sensor_val())
+    .Times(1)
+    .WillOnce(Return(0));
 
     // Act
     int retVal = ans.Read(1);
@@ -28,10 +30,12 @@ TEST(MockSensorTest, Read_failure) {
     MockSensor ms;
     AnalogSensor ans(ms);
     
-    EXPECT_CALL(ms, sensor_val()).Times(1).WillOnce(Return(-1));
+    EXPECT_CALL(ms, sensor_val())
+    .Times(1)
+    .WillOnce(Return(-1));
 
     // Act
-    int retVal = ans.Read(-10);
+    int retVal = ans.Read(-1);
 
     // Assert
     EXPECT_EQ(retVal, -1);
