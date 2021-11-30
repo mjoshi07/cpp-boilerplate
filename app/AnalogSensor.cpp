@@ -15,13 +15,8 @@
 
 int AnalogSensor::Read(int num_samples) {
     if (num_samples <= 0) {
-        return -1;
+        return sensor_.sensor_val();
     }
-    int sensor_value(1);
-    for (int i = 1; i < num_samples; i++) {
-       sensor_value +=  sensor_.sensor_val();
-    }
-
-    return sensor_value;
+    return num_samples + sensor_.sensor_val();
 }
 
